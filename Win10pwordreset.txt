@@ -1,0 +1,18 @@
+
+
+C:\Windows\System32>   rename osk.exe osk.old
+
+rename cmd.exe osk.exe
+
+
+
+net user
+
+net user (account) *
+
+Change password
+
+
+---or---
+
+net user administrator /active:yes

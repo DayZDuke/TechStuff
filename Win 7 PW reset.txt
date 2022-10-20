@@ -1,0 +1,51 @@
+Once your installation is found, take note of the drive letter found in the Location column. Most Windows 7 installations will show D: but yours may be different.
+
+Note: While in Windows, the drive that Windows 7 is installed on is probably labeled as the C: drive. However, when booting from Windows 7 install or repair media, a hidden drive is available that usually isn't. This drive is given the first available drive letter, probably C:, leaving the next available drive letter, probably D:, for the next drive - the one with Windows 7 installed on it. 
+Select Windows 7 from the Operating System list and then click the Next button. 
+From System Recovery Options, choose Command Prompt. 
+With Command Prompt now open, execute the following two commands, in this order, pressing Enter after both:
+
+
+-------------------------------------------
+
+copy d:\windows\system32\utilman.exe d:\
+
+copy d:\windows\system32\cmd.exe d:\windows\system32\utilman.exe
+
+---------------------------------------------
+
+To the Overwrite question after executing the second command, answer with Yes.
+
+Important: If the drive that Windows 7 is installed on in your computer is not D: (Step 5), be sure to change all instances of d: in the commands above with the correct drive letter. 
+
+Remove the disc or flash drive and then restart your computer.
+
+
+
+Now that Command Prompt is open, execute the net user command as shown, replacing myusername with whatever your user name is and mypassword with whatever new password you'd like to use:
+net user myusername mypassword
+So, for example, I would do something like this:
+
+----------------------------
+
+net user Administrator BHCadmin1!
+
+-----------------------------
+
+Tip: If your username has spaces, put double quotes around it when executing net user, as in net user "Tim Fisher" 1lov3blueberrie$. 
+Close the Command Prompt window. 
+Log in with your new password! 
+
+
+To reverse the changes you've made, open Command Prompt as an administrator and execute the following:
+
+-------------------------------
+
+copy d:\utilman.exe d:\windows\system32\utilman.exe
+
+-------------------------------
+
+Confirm the overwrite and then restart your computer.
+
+
+

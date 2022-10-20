@@ -1,0 +1,11 @@
+C:
+cd windows
+cd system32
+ren utilman.exe utilman_bak.exe
+copy cmd.exe utilman.exe
+
+From CMD
+control userpasswords2
+
+Delete utilman.exe
+Rename Utilman_bak to Utilman.exe
